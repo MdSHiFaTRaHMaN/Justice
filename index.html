@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/f494bafbd6.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Tailwind CSS</title>
@@ -13,38 +17,36 @@
     </style>
 </head>
 <body>
-    <header class="text-gray-600 body-font lg:px-24 ">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img src="images/logo2.png" alt="">
-          </a>
-          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900">Home</a>
-            <a class="mr-5 hover:text-gray-900">Services</a>
-            <a class="mr-5 hover:text-gray-900">Course</a>
-            <a class="mr-5 hover:text-gray-900">Blog</a>
-            <a class="mr-5 hover:text-gray-900">Contact US</a>
-          </nav>
-          <button class="inline-flex items-center text-white border-0 focus:outline-none bg-cyan-800 hover:bg-cyan-500 px-5 py-3 rounded text-base mt-4 md:mt-0">Button
-          </button>
-        </div>
-      </header>
+  <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <a class="btn btn-ghost normal-case text-xl"><img class="w-16 lg:w-28	" src="./images/logo2.png" alt="" srcset=""></a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>           
+          <li><a>Services <i class="fa-solid fa-chevron-right"></i> </a></li>
+          <li><a>Cases <i class="fa-solid fa-chevron-right"></i> </a></li>
+          <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+          <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-[#B68C5A] text-white ">Free Consultation</a>
+      </div>
+    </div>
 
-      <section class="lg:px-24 items-center justify-center lg:min-h-[200px]">
-        <div class="hero min-h-screen"  style="background-image: url(images/slider-1.jpg);">
-          <div class="hero-overlay bg-opacity-60"></div>
-          <div class="hero-content text-center text-neutral-content">
-            <div class="text-center text-white pt-50">
-              <h1 class="mb-5 text-5xl font-bold">We Provide Effective
-                Legal Solutions</h1>
-              <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              <input type="text" placeholder="Search Your Devices" class="px-20 py-3 rounded-md text-black">
-              <button class="btn btn-primary">Search</button>
-            </div>
-          </div>
+    <div class="hero my-10 h-[500px] " style="background-image: url('./images/banner.png');">
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-2xl">
+          <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+          <p class="mb-5 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs input-xs p-6 mr-3 " />
+          <button class="btn  bg-[#B68C5A] text-white border-0 px-6 py-1 ">Search</button>
         </div>
-      </section>
-
+      </div>
+    </div>
+  </header>
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <h1 class="text-center text-5xl font-bold mb-10">The Legal Practice Area</h1>
@@ -184,7 +186,6 @@
         </div>
       </section>
       <!-- wwwwwwwwwwwwwwwwww -->
-
               <!-- Faq section -->
       <section>
         <div class="text-center my-16">
@@ -260,7 +261,7 @@
               <div class="flex flex-wrap my-1">
                 <div class="px-1 w-1/2">
                   <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 sm:px-10 px-6 ">
-                    <div class="text-center relative w-full -my-10">
+                    <div class="text-center relative w-full lg:-my-10">
                       <img src="images/call.png" class="mx-auto" alt="">
                       <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Call US</h2>
                       <h5>+88017 00 11 22 33</h5>
@@ -270,7 +271,7 @@
                 </div>
                 <div class="px-1 w-1/2">
                   <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 sm:px-10 px-6 ">
-                    <div class="text-center relative w-full -my-10">
+                    <div class="text-center relative w-full lg:-my-10">
                       <img src="images/time.png" class="mx-auto" alt="">
                       <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Time Working</h2>
                       <h5>Mon-Fri: 9AM to 5PM </h5>
@@ -282,17 +283,17 @@
               <div class="flex flex-wrap my-1">
                 <div class="px-1 w-1/2">
                   <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 sm:px-10 px-6">
-                    <div class="text-center relative w-full -my-11">
-                      <img src="images/email.png" class="mx-auto" alt="">
-                      <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Email US</h2>
-                      <h5>mdshifat@gmail.com</h5>
-                      <h5>mdshifat@gmail.com</h5>
+                    <div class="text-center relative w-full lg:-my-10">
+                      <img src="images/address.png" class="mx-auto" alt="">
+                      <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Address US</h2>
+                      <h5>A108 Adam Street,</h5>
+                      <h5>New York, NY 535022</h5>
                     </div>
                   </div>
                 </div>
                 <div class="px-1 w-1/2">
                   <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 sm:px-10 px-6">
-                    <div class="text-center relative w-full -my-10">
+                    <div class="text-center relative w-full lg:-my-10">
                       <img src="images/address.png" class="mx-auto" alt="">
                       <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Address US</h2>
                       <h5>A108 Adam Street,</h5>
